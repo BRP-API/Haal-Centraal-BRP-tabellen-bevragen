@@ -1,11 +1,16 @@
+---
+layout: page-with-side-nav
+title: Getting Started
+---
 # Getting Started
 
 De 'BRP tabellen bevragen' Web API is gespecificeerd met behulp van de [OpenAPI specifications (OAS)](https://swagger.io/specification/).
 
 ## Specificaties
-Een visuele representatie van de specificatie kan worden gegenereerd met [Swagger UI](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/master/specificatie/openapi.yaml).
 
-De (resolved) OAS3 is hier te downloaden: [openapi.yaml](../specificatie/genereervariant/openapi.yaml).
+Een visuele representatie van de specificatie kan worden gegenereerd met [Swagger UI]({{ site.baseurl }}/swagger-ui) of [Redoc]({{ site.baseurl }}/redoc/).
+
+De (resolved) OAS3 is hier te downloaden: [openapi.yaml](https://github.com/VNG-Realisatie{{ site.baseurl }}/blob/master/specificatie/genereervariant/openapi.yaml).
 
 
 ## Functionaliteit
