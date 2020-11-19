@@ -16,7 +16,7 @@ Wil je de API gebruiken? Dit kun je doen:
 ## Functionaliteit en specificaties
 Met deze API kun je:
 * een overzicht vragen van de beschikbare landelijke tabellen in de API
-* een label zoeken op een (een deel van) de omschrijving
+* een landelijke tabel zoeken op een (een deel van) de omschrijving
 * een omschrijving raadplegen bij een code in een landelijke tabel
 * een code zoeken bij (een deel van) de omschrijving in een landelijke tabel
 
