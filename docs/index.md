@@ -10,7 +10,6 @@ API voor het zoeken en raadplegen van BRP landelijke tabellen.
 * Bekijk de specificaties met [Swagger UI](./swagger-ui) of [Redoc](./redoc)
 * Lees de [Getting started](./getting-started)
 * Download de [technische specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}
-* Download [client code](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/tree/master/code){:target="_blank" rel="noopener"}
 
 ## Heb je meer nodig? 
 Gebruik de BRP tabellen API in combinatie met (een van de) andere BRP API’s:
