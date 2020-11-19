@@ -2,58 +2,56 @@
 layout: page-with-side-nav
 title: Getting Started
 ---
+
 # Getting Started
 
-De 'BRP tabellen bevragen' Web API is gespecificeerd met behulp van de [OpenAPI specifications (OAS)](https://swagger.io/specification/).
+De 'BRP tabellen bevragen' Web API is gespecificeerd in [OpenAPI specifications (OAS)](https://swagger.io/specification/).
 
-## Specificaties
+Wil je de API gebruiken? Dit kun je doen:
 
-Een visuele representatie van de specificatie kan worden gegenereerd met [Swagger UI]({{ site.baseurl }}/swagger-ui) of [Redoc]({{ site.baseurl }}/redoc/).
+1. Bekijk de functionaliteit en specificaties
+2. Implementeer de API
+3. Probeer en test de API
 
-De (resolved) OAS3 is hier te downloaden: [openapi.yaml](https://github.com/VNG-Realisatie{{ site.baseurl }}/blob/master/specificatie/genereervariant/openapi.yaml).
+## Functionaliteit en specificaties
+Met deze API kun je:
+* een overzicht vragen van de beschikbare landelijke tabellen in de API
+* een label zoeken op een (een deel van) de omschrijving
+* een omschrijving raadplegen bij een code in een landelijke tabel
+* een code zoeken bij (een deel van) de omschrijving in een landelijke tabel
 
+Zoeken in de BRP tabellen API is case insensitive en ondersteunt het gebruik van wildcard karakter *.
 
-## Functionaliteit
-Met deze API kunnen tabelwaarden of -codes worden gezocht of geraadpleegd. De API stelt landelijke tabellen op een flexibele manier ter beschikking.
+Standaard levert de API bij het zoeken geen beëindigde tabelwaarden, zoals landen die niet meer bestaan. Je kunt ook beëindigde waarden vinden door de parameter inclusiefbeeindigd=true op te nemen in het request.
 
-De API kent vier endpoints:
+Je kunt een visuele representatie van de specificatie bekijken met [Swagger UI]({{ site.baseurl }}/swagger-ui) of [Redoc]({{ site.baseurl }}/redoc).
 
-| /tabellen |  Een tabel zoeken en raadplegen welke tabellen beschikbaar zijn |
-| /tabellen/{tabelidentificatie} | Een specifieke tabel de omschrijving raadplegen |
-| /tabellen/{tabelidentificatie}/waarden | Een tabelwaarde zoeken op code of omschrijving |
-| /tabellen/{tabelidentificatie}/waarden/{code} | Een omschrijving zoeken bij een code in een tabel |
+Je kunt de [functionele documentatie](./features) vinden in de [features](./features).
 
-Bij het zoeken op omschrijving kan gebruik gemaakt worden van [wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature).
+## Implementeer de API
 
-Bij het zoeken op tabelwaarden worden standaard alleen actieve waarden teruggegeven. Wanneer je ook beëindigde waarden wilt vinden, gebruik je query parameter inclusiefbeeindigd=true.
+Je kunt code genereren op basis van de [genereervariant van de specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}.
 
-Wanneer een tabelwaarde is beëindigd en is overgegaan in een andere tabelwaarde, wordt attribuut "nieuweCode" opgenomen in het antwoord. Deze code kan gebruikt worden om de nieuwe tabelwaarde op te zoeken. Dit kan je bijvoorbeeld gebruiken in de gemeententabel bij een gemeente die is overgegaan in een andere gemeente.
+## Probeer en test
+Wil je de 'BRP tabellen bevragen' Web API proberen en testen? Kijk op: `https://www.haalcentraal.nl/haalcentraal/api/landelijke_tabellen`
 
-Bij de tabel "Reden opnemen - beeindigen Nationaliteit" kan ook attribuut "soort" worden geleverd, die een code bevat voor de reden voor het opnemen, dan wel het beëindigen van de nationaliteit.
+Om de web api te gebruiken heb je een apikey nodig. Deze voeg je aan een request toe als header "X-API-KEY". Een API-key vraag je aan bij de product owner [cathy.dingemanse@denhaag.nl](mailto:cathy.dingemanse@denhaag.nl).
 
-## Probeer en test de API
-De BRP tabellen bevragen Web API is te benaderen via de volgende url: https://www.haalcentraal.nl/haalcentraal/api/landelijke_tabellen
+__De tabellen in de Haal Centraal probeeromgeving worden niet bijgehouden. Dit zijn dus niet de actuele tabellen.__
 
-Om de web api te kunnen bevragen is een apikey nodig. Deze kun je aanvragen door een e-mail te sturen naar Cathy Dingemanse <c.dingemanse@comites.nl>.
+__Je kan de Haal Centraal probeeromgeving niet gebruiken vanuit de browser, dus ook niet vanuit de browserversie van Postman. Gebruik dus de desktopversie van een testtool (zoals Postman) om berichten te sturen.__
 
-### Testen met Postman
-De werking van de 'Bevraging Ingeschreven Persoon' Web API is het makkelijkst te testen met behulp van [Postman](https://www.getpostman.com/). We hebben al een [Postman collection](../test/Landelijke-tabellen-postman-collection.json) voor je klaargezet die je kan gebruiken.
+### Importeer de specificaties in Postman
 
-Volg onderstaande stappen om de collection bestand te importeren:
+De werking van de API is het makkelijkst te testen met behulp van [Postman](https://www.getpostman.com/){:target="_blank" rel="noopener"}. We hebben al een [Postman collection](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/test/Landelijke-tabellen-postman-collection.json){:target="_blank" rel="noopener"} voor je klaargezet. Deze kun je importeren in Postman. 
 
-1. Klik op de Import button om de Import dialog box te openen
+### Configureer de url en api key
 
-2. Selecteer 'Import From Link' tab, plak de volgende url in de 'Enter a URL and press Import' textbox en klik op de Import button
-
-``` url
-https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/master/test/Landelijke-tabellen-postman-collection.json
-```
-
-3. Klik op de Next button om de Postman collectie te importeren
-
-4. Voeg de API key toe
-Selecteer het request waar je dit wilt toevoegen. In het rechterscherm wordt een invoerscherm voor de request getoond. Klik op het tabblad "Authorization". Kies type "API Key". Vul bij Value de API key in die je hebt gekregen.
-
-5. Ga naar tabblad Params en vul de parameters in die je wilt gebruiken. Uncheck de overige parameters.
-
-6. Vervang de {{baseUrl}} in de url met https://www.haalcentraal.nl/haalcentraal/api/landelijke_tabellen en klik de Send button om de request naar de endpoint te sturen.
+1. Klik bij "Landelijke tabellen" op de drie bolletjes.
+2. Klik vervolgens op Edit
+3. Selecteer tabblad "Authorization"
+4. Kies TYPE "API Key"
+5. Vul in Key: "x-api-key", Value: de API key die je van Cathy hebt ontvangen, Add to: "Header"
+6. Selecteer tabblad "Variables"
+7. Vul bij baseUrl INITIAL VALUE en bij CURRENT VALUE: `https://www.haalcentraal.nl/haalcentraal/api/brphistorie`
+8. Klik op de knop Update
