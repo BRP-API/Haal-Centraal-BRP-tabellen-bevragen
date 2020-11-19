@@ -4,10 +4,6 @@ title: Haal Centraal BRP tabellen bevragen
 ---
 # Haal Centraal BRP tabellen bevragen
 
-![lint oas](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/lint-oas/badge.svg)
-![generate sdks](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/generate-sdks/badge.svg)
-![generate postman collection](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/generate-postman-collection/badge.svg)
-
 API voor het zoeken en raadplegen van BRP landelijke tabellen.
 
 ## Direct aan de slag?
@@ -17,7 +13,7 @@ API voor het zoeken en raadplegen van BRP landelijke tabellen.
 * Download [client code](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/tree/master/code){:target="_blank" rel="noopener"}
 
 ## Heb je meer nodig? 
-Gebruik de Reisdocumenten bevragen API in combinatie met (een van de) andere BRP API’s:
+Gebruik de BRP tabellen API in combinatie met (een van de) andere BRP API’s:
 
 * [Actuele BRP-gegevens bevragen](https://vng-realisatie.github.io/Haal-Centraal-BRP-bevragen){:target="_blank" rel="noopener"}
 * [Historische BRP-gegevens bevragen](https://vng-realisatie.github.io/Haal-Centraal-BRP-historie-bevragen){:target="_blank" rel="noopener"}
