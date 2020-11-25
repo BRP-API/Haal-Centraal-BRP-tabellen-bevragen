@@ -3,7 +3,6 @@ layout: page-with-side-nav
 title: Features
 ---
 # Features
-
 De functionaliteit van de BRP tabellen bevragen API is (nog) niet gespecificeerd in features.
 
 ## Algemene Haal Centraal features
