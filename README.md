@@ -2,6 +2,7 @@
 
 BRP tabellen bevragen is een Haal Centraal API voor het ontsluiten van landelijke tabellen die op de website van BZK worden gepubliceerd voor alle binnengemeentelijke afnemers in NL.
 Een landelijke tabel is een lijst met code en omschrijving combinaties die op verschillende plekken in registraties, API's en applicaties gebruikt (kunnen) worden.
+De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.  
 
 ## Getting started
 Om te beginnen met ontwikkelen van de API is de [getting started](./docs/getting-started.md) een goed beginpunt. De API is technisch gespecificeerd in Open API specificaties (zie hieronder bij documentatie).
