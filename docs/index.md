@@ -4,7 +4,7 @@ title: Haal Centraal BRP tabellen bevragen
 ---
 # Haal Centraal BRP tabellen bevragen
 
-API voor het zoeken en raadplegen van BRP landelijke tabellen.
+API voor het zoeken en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.  
 
 ## Direct uitproberen?
 * Bekijk de specificaties met [Swagger UI](./swagger-ui) of [Redoc](./redoc)
