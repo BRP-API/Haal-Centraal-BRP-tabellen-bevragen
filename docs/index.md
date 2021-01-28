@@ -4,9 +4,9 @@ title: Haal Centraal BRP tabellen bevragen
 ---
 # Haal Centraal BRP tabellen bevragen
 
-API voor het zoeken en raadplegen van BRP landelijke tabellen.
+API voor het zoeken en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.  
 
-## Direct aan de slag?
+## Direct uitproberen?
 * Bekijk de specificaties met [Swagger UI](./swagger-ui) of [Redoc](./redoc)
 * Lees de [Getting started](./getting-started)
 * Download de [technische specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}
@@ -26,6 +26,15 @@ Gebruik de BRP tabellen API in combinatie met (een van de) andere BRP API’s:
 * [REST API Design Rules](https://docs.geostandaarden.nl/api/API-Designrules/){:target="_blank" rel="noopener"}
 * [Landelijke API strategie voor de overheid](https://geonovum.github.io/KP-APIs/){:target="_blank" rel="noopener"}
 
+## Contact
+
+* Product Owner: Cathy Dingemanse, [cathy.dingemanse@denhaag.nl](mailto:cathy.dingemanse@denhaag.nl)
+* Designer: Johan Boer, [johan.boer@vng.nl](mailto:johan.boer@vng.nl)
+* Designer: Robert Melskens, [robert.melskens@vng.nl](mailto:robert.melskens@vng.nl)
+* Customer zero: Melvin Lee, [melvin.lee@iswish.nl](mailto:melvin.lee@iswish.nl)
+* Tester: Frank Samwel, [frank.samwel@denhaag.nl](mailto:frank.samwel@denhaag.nl)
+
+
 ## Licentie
 Copyright &copy; VNG Realisatie 2020
-Licensed under the [EUPL](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/master/LICENCE.md)
+Licensed under the [EUPL](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/LICENCE.md)
