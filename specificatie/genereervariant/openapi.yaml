@@ -60,8 +60,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BadRequestFoutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.1
-                  400 Bad Request
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1
                 title: Ten minste één parameter moet worden opgegeven.
                 status: 400
                 detail: The request could not be understood by the server due to malformed
@@ -83,8 +82,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.2
-                  401 Unauthorized
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2
                 title: Niet correct geauthenticeerd.
                 status: 401
                 detail: The request requires user authentication. The response MUST
@@ -102,8 +100,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.4
-                  403 Forbidden
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4
                 title: U bent niet geautoriseerd voor deze operatie.
                 status: 403
                 detail: The server understood the request, but is refusing to fulfill
@@ -120,8 +117,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.7
-                  406 Not Acceptable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7
                 title: Gevraagde contenttype wordt niet ondersteund.
                 status: 406
                 detail: The resource identified by the request is only capable of
@@ -139,8 +135,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.1
-                  500 Internal server error
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1
                 title: Interne server fout.
                 status: 500
                 detail: The server encountered an unexpected condition which prevented
@@ -157,8 +152,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.2
-                  501 Not Implemented
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2
                 title: Not Implemented
                 status: 501
                 detail: The server does not support the functionality required to
@@ -175,8 +169,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.4
-                  503 Service Unavailable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4
                 title: Bronservice {bron} is tijdelijk niet beschikbaar.
                 status: 503
                 detail: The service is currently unable to handle the request due
@@ -220,8 +213,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BadRequestFoutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.1
-                  400 Bad Request
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1
                 title: Ten minste één parameter moet worden opgegeven.
                 status: 400
                 detail: The request could not be understood by the server due to malformed
@@ -243,8 +235,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.2
-                  401 Unauthorized
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2
                 title: Niet correct geauthenticeerd.
                 status: 401
                 detail: The request requires user authentication. The response MUST
@@ -262,8 +253,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.4
-                  403 Forbidden
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4
                 title: U bent niet geautoriseerd voor deze operatie.
                 status: 403
                 detail: The server understood the request, but is refusing to fulfill
@@ -280,8 +270,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.5
-                  404 Not Found
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5
                 title: Opgevraagde resource bestaat niet.
                 status: 404
                 detail: The server has not found anything matching the Request-URI.
@@ -297,8 +286,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.7
-                  406 Not Acceptable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7
                 title: Gevraagde contenttype wordt niet ondersteund.
                 status: 406
                 detail: The resource identified by the request is only capable of
@@ -316,8 +304,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.1
-                  500 Internal server error
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1
                 title: Interne server fout.
                 status: 500
                 detail: The server encountered an unexpected condition which prevented
@@ -334,8 +321,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.2
-                  501 Not Implemented
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2
                 title: Not Implemented
                 status: 501
                 detail: The server does not support the functionality required to
@@ -352,8 +338,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.4
-                  503 Service Unavailable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4
                 title: Bronservice {bron} is tijdelijk niet beschikbaar.
                 status: 503
                 detail: The service is currently unable to handle the request due
@@ -429,8 +414,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BadRequestFoutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.1
-                  400 Bad Request
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1
                 title: Ten minste één parameter moet worden opgegeven.
                 status: 400
                 detail: The request could not be understood by the server due to malformed
@@ -452,8 +436,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.2
-                  401 Unauthorized
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2
                 title: Niet correct geauthenticeerd.
                 status: 401
                 detail: The request requires user authentication. The response MUST
@@ -471,8 +454,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.4
-                  403 Forbidden
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4
                 title: U bent niet geautoriseerd voor deze operatie.
                 status: 403
                 detail: The server understood the request, but is refusing to fulfill
@@ -489,8 +471,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.7
-                  406 Not Acceptable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7
                 title: Gevraagde contenttype wordt niet ondersteund.
                 status: 406
                 detail: The resource identified by the request is only capable of
@@ -508,8 +489,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.1
-                  500 Internal server error
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1
                 title: Interne server fout.
                 status: 500
                 detail: The server encountered an unexpected condition which prevented
@@ -526,8 +506,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.2
-                  501 Not Implemented
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2
                 title: Not Implemented
                 status: 501
                 detail: The server does not support the functionality required to
@@ -544,8 +523,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.4
-                  503 Service Unavailable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4
                 title: Bronservice {bron} is tijdelijk niet beschikbaar.
                 status: 503
                 detail: The service is currently unable to handle the request due
@@ -598,8 +576,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/BadRequestFoutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.1
-                  400 Bad Request
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1
                 title: Ten minste één parameter moet worden opgegeven.
                 status: 400
                 detail: The request could not be understood by the server due to malformed
@@ -621,8 +598,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.2
-                  401 Unauthorized
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2
                 title: Niet correct geauthenticeerd.
                 status: 401
                 detail: The request requires user authentication. The response MUST
@@ -640,8 +616,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.4
-                  403 Forbidden
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4
                 title: U bent niet geautoriseerd voor deze operatie.
                 status: 403
                 detail: The server understood the request, but is refusing to fulfill
@@ -658,8 +633,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.5
-                  404 Not Found
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5
                 title: Opgevraagde resource bestaat niet.
                 status: 404
                 detail: The server has not found anything matching the Request-URI.
@@ -675,8 +649,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.4.7
-                  406 Not Acceptable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7
                 title: Gevraagde contenttype wordt niet ondersteund.
                 status: 406
                 detail: The resource identified by the request is only capable of
@@ -694,8 +667,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.1
-                  500 Internal server error
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1
                 title: Interne server fout.
                 status: 500
                 detail: The server encountered an unexpected condition which prevented
@@ -712,8 +684,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.2
-                  501 Not Implemented
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2
                 title: Not Implemented
                 status: 501
                 detail: The server does not support the functionality required to
@@ -730,8 +701,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Foutbericht'
               example:
-                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#/10.5.4
-                  503 Service Unavailable
+                type: https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4
                 title: Bronservice {bron} is tijdelijk niet beschikbaar.
                 status: 503
                 detail: The service is currently unable to handle the request due
