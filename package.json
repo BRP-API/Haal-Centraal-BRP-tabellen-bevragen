@@ -1,7 +1,7 @@
 {
   "name": "haal-centraal-brp-tabellen-bevragen",
   "version": "1.0.0",
-  "description": "BRP-tabellen-bevragen is een Haal Centraal API voor het zoeken en en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.
+  "description": "BRP-tabellen-bevragen is een Haal Centraal API voor het zoeken en en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.",
   "main": "index.js",
   "directories": {
     "doc": "docs",
