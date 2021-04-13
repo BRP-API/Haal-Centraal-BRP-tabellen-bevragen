@@ -1086,18 +1086,14 @@
         "type" : "object",
         "properties" : {
           "code" : {
-            "title" : "code",
             "type" : "string",
             "example" : "6030"
           },
           "omschrijving" : {
-            "title" : "omschrijving",
             "type" : "string",
-            "description" : "Voor mensen leesbare omschrijving van de waarde.",
             "example" : "Nederland"
           }
-        },
-        "description" : "Generieke tabel met waarden om een code en omschrijving op te nemen."
+        }
       }
     },
     "parameters" : {
