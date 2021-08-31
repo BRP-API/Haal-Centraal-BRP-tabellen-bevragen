@@ -87,7 +87,7 @@ paths:
   /tabellen/{tabelidentificatie}/waarden:
     get:
       operationId: getWaarden
-      description: "Het ophalen van de tabelwaarden van een landelijke tabel.<br>Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. <br> Als de parameter <b> inclusief beeindigd </b> met waarde <i> true </i>  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd."
+      description: "Het ophalen van de tabelwaarden van een landelijke tabel.<br>Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. <br> Als de parameter <b> inclusief beeindigd </b> met waarde <i> true </i>  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd."
       parameters:
         - $ref: '#/components/parameters/tabelidentificatie_path'
         - $ref: '#/components/parameters/omschrijving'
@@ -171,13 +171,6 @@ components:
       in: path
       description: "De identificatie van een landelijke tabel."
       required: true
-      schema:
-        type: string
-    code:
-      name: code
-      in: query
-      description: "De code, behorende bij de tabelwaarde."
-      required: false
       schema:
         type: string
     code_path:
