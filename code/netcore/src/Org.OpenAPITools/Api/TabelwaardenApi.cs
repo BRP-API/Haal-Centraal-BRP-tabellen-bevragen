@@ -53,29 +53,27 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <returns>WaardeCollectie</returns>
-        WaardeCollectie GetWaarden(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?));
+        WaardeCollectie GetWaarden(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <returns>ApiResponse of WaardeCollectie</returns>
-        ApiResponse<WaardeCollectie> GetWaardenWithHttpInfo(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?));
+        ApiResponse<WaardeCollectie> GetWaardenWithHttpInfo(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?));
         #endregion Synchronous Operations
     }
 
@@ -114,31 +112,29 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <remarks>
-        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of WaardeCollectie</returns>
-        System.Threading.Tasks.Task<WaardeCollectie> GetWaardenAsync(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<WaardeCollectie> GetWaardenAsync(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
         /// </summary>
         /// <remarks>
-        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        /// Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (WaardeCollectie)</returns>
-        System.Threading.Tasks.Task<ApiResponse<WaardeCollectie>> GetWaardenWithHttpInfoAsync(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<WaardeCollectie>> GetWaardenWithHttpInfoAsync(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -169,7 +165,7 @@ namespace Org.OpenAPITools.Api
         /// Initializes a new instance of the <see cref="TabelwaardenApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public TabelwaardenApi(String basePath)
+        public TabelwaardenApi(string basePath)
         {
             this.Configuration = Org.OpenAPITools.Client.Configuration.MergeConfigurations(
                 Org.OpenAPITools.Client.GlobalConfiguration.Instance,
@@ -232,7 +228,7 @@ namespace Org.OpenAPITools.Api
         /// Gets the base path of the API client.
         /// </summary>
         /// <value>The base path</value>
-        public String GetBasePath()
+        public string GetBasePath()
         {
             return this.Configuration.BasePath;
         }
@@ -291,11 +287,11 @@ namespace Org.OpenAPITools.Api
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
-            String[] _contentTypes = new String[] {
+            string[] _contentTypes = new string[] {
             };
 
             // to determine the Accept header
-            String[] _accepts = new String[] {
+            string[] _accepts = new string[] {
                 "application/json",
                 "application/problem+json"
             };
@@ -357,11 +353,11 @@ namespace Org.OpenAPITools.Api
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
-            String[] _contentTypes = new String[] {
+            string[] _contentTypes = new string[] {
             };
 
             // to determine the Accept header
-            String[] _accepts = new String[] {
+            string[] _accepts = new string[] {
                 "application/json",
                 "application/problem+json"
             };
@@ -391,30 +387,28 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <returns>WaardeCollectie</returns>
-        public WaardeCollectie GetWaarden(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?))
+        public WaardeCollectie GetWaarden(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?))
         {
-            Org.OpenAPITools.Client.ApiResponse<WaardeCollectie> localVarResponse = GetWaardenWithHttpInfo(tabelidentificatie, code, omschrijving, inclusiefbeeindigd);
+            Org.OpenAPITools.Client.ApiResponse<WaardeCollectie> localVarResponse = GetWaardenWithHttpInfo(tabelidentificatie, omschrijving, inclusiefbeeindigd);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <returns>ApiResponse of WaardeCollectie</returns>
-        public Org.OpenAPITools.Client.ApiResponse<WaardeCollectie> GetWaardenWithHttpInfo(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?))
+        public Org.OpenAPITools.Client.ApiResponse<WaardeCollectie> GetWaardenWithHttpInfo(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?))
         {
             // verify the required parameter 'tabelidentificatie' is set
             if (tabelidentificatie == null)
@@ -422,11 +416,11 @@ namespace Org.OpenAPITools.Api
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
-            String[] _contentTypes = new String[] {
+            string[] _contentTypes = new string[] {
             };
 
             // to determine the Accept header
-            String[] _accepts = new String[] {
+            string[] _accepts = new string[] {
                 "application/json",
                 "application/problem+json"
             };
@@ -438,10 +432,6 @@ namespace Org.OpenAPITools.Api
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
             localVarRequestOptions.PathParameters.Add("tabelidentificatie", Org.OpenAPITools.Client.ClientUtils.ParameterToString(tabelidentificatie)); // path parameter
-            if (code != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "code", code));
-            }
             if (omschrijving != null)
             {
                 localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "omschrijving", omschrijving));
@@ -465,32 +455,30 @@ namespace Org.OpenAPITools.Api
         }
 
         /// <summary>
-        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of WaardeCollectie</returns>
-        public async System.Threading.Tasks.Task<WaardeCollectie> GetWaardenAsync(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<WaardeCollectie> GetWaardenAsync(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<WaardeCollectie> localVarResponse = await GetWaardenWithHttpInfoAsync(tabelidentificatie, code, omschrijving, inclusiefbeeindigd, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<WaardeCollectie> localVarResponse = await GetWaardenWithHttpInfoAsync(tabelidentificatie, omschrijving, inclusiefbeeindigd, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
         /// <summary>
-        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+        ///  Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="tabelidentificatie">De identificatie van een landelijke tabel.</param>
-        /// <param name="code">De code, behorende bij de tabelwaarde. (optional)</param>
         /// <param name="omschrijving">De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)</param>
         /// <param name="inclusiefbeeindigd">De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (WaardeCollectie)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<WaardeCollectie>> GetWaardenWithHttpInfoAsync(string tabelidentificatie, string code = default(string), string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<WaardeCollectie>> GetWaardenWithHttpInfoAsync(string tabelidentificatie, string omschrijving = default(string), bool? inclusiefbeeindigd = default(bool?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'tabelidentificatie' is set
             if (tabelidentificatie == null)
@@ -499,11 +487,11 @@ namespace Org.OpenAPITools.Api
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
-            String[] _contentTypes = new String[] {
+            string[] _contentTypes = new string[] {
             };
 
             // to determine the Accept header
-            String[] _accepts = new String[] {
+            string[] _accepts = new string[] {
                 "application/json",
                 "application/problem+json"
             };
@@ -516,10 +504,6 @@ namespace Org.OpenAPITools.Api
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
             localVarRequestOptions.PathParameters.Add("tabelidentificatie", Org.OpenAPITools.Client.ClientUtils.ParameterToString(tabelidentificatie)); // path parameter
-            if (code != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "code", code));
-            }
             if (omschrijving != null)
             {
                 localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "omschrijving", omschrijving));

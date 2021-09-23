@@ -30,7 +30,7 @@ import org.openapitools.client.model.Waardetabel;
 /**
  * Waarde
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-04-14T07:53:34.702199Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-09-23T08:05:00.076389Z[Etc/UTC]")
 public class Waarde {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)

@@ -64,8 +64,8 @@ class TabelwaardenApi(object):
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
                     will be returned without reading/decoding response data.
                     Default is True.
-                _request_timeout (float/tuple): timeout setting for this request. If one
-                    number provided, it will be total request timeout. It can also
+                _request_timeout (int/float/tuple): timeout setting for this request. If
+                    one number provided, it will be total request timeout. It can also
                     be a pair (tuple) of (connection, read) timeouts.
                     Default is None.
                 _check_input_type (bool): specifies if type checking
@@ -174,7 +174,7 @@ class TabelwaardenApi(object):
         ):
             """get_waarden  # noqa: E501
 
-            Het ophalen van de tabelwaarden van een landelijke tabel.<br>Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. <br> Als de parameter <b> inclusief beeindigd </b> met waarde <i> true </i>  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.  # noqa: E501
+            Het ophalen van de tabelwaarden van een landelijke tabel.<br>Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. <br> Als de parameter <b> inclusief beeindigd </b> met waarde <i> true </i>  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.  # noqa: E501
             This method makes a synchronous HTTP request by default. To make an
             asynchronous HTTP request, please pass async_req=True
 
@@ -185,7 +185,6 @@ class TabelwaardenApi(object):
                 tabelidentificatie (str): De identificatie van een landelijke tabel.
 
             Keyword Args:
-                code (str): De code, behorende bij de tabelwaarde.. [optional]
                 omschrijving (str): De omschrijving van de tabelwaarde. <br> Bij het zoeken mag er gebruik worden gemaakt van <b>[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)</b>. <br>Zoeken is <b>[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)</b></a>. [optional]
                 inclusiefbeeindigd (bool): De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd.. [optional]
                 _return_http_data_only (bool): response data without head status
@@ -193,8 +192,8 @@ class TabelwaardenApi(object):
                 _preload_content (bool): if False, the urllib3.HTTPResponse object
                     will be returned without reading/decoding response data.
                     Default is True.
-                _request_timeout (float/tuple): timeout setting for this request. If one
-                    number provided, it will be total request timeout. It can also
+                _request_timeout (int/float/tuple): timeout setting for this request. If
+                    one number provided, it will be total request timeout. It can also
                     be a pair (tuple) of (connection, read) timeouts.
                     Default is None.
                 _check_input_type (bool): specifies if type checking
@@ -248,7 +247,6 @@ class TabelwaardenApi(object):
             params_map={
                 'all': [
                     'tabelidentificatie',
-                    'code',
                     'omschrijving',
                     'inclusiefbeeindigd',
                 ],
@@ -270,8 +268,6 @@ class TabelwaardenApi(object):
                 'openapi_types': {
                     'tabelidentificatie':
                         (str,),
-                    'code':
-                        (str,),
                     'omschrijving':
                         (str,),
                     'inclusiefbeeindigd':
@@ -279,13 +275,11 @@ class TabelwaardenApi(object):
                 },
                 'attribute_map': {
                     'tabelidentificatie': 'tabelidentificatie',
-                    'code': 'code',
                     'omschrijving': 'omschrijving',
                     'inclusiefbeeindigd': 'inclusiefbeeindigd',
                 },
                 'location_map': {
                     'tabelidentificatie': 'path',
-                    'code': 'query',
                     'omschrijving': 'query',
                     'inclusiefbeeindigd': 'query',
                 },

@@ -2,7 +2,7 @@
 
 Landelijke tabellen
 - API version: 1.0.0
-  - Build date: 2021-04-14T07:53:34.702199Z[Etc/UTC]
+  - Build date: 2021-09-23T08:05:00.076389Z[Etc/UTC]
 
 API voor het ontsluiten van landelijke tabellen die op de website van BZK worden gepubliceerd.
 

@@ -214,7 +214,6 @@ public class TabelwaardenApi {
     /**
      * Build call for getWaarden
      * @param tabelidentificatie De identificatie van een landelijke tabel. (required)
-     * @param code De code, behorende bij de tabelwaarde. (optional)
      * @param omschrijving De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)
      * @param inclusiefbeeindigd De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)
      * @param _callback Callback for upload/download progress
@@ -233,7 +232,7 @@ public class TabelwaardenApi {
         <tr><td> 503 </td><td> Service Unavailable </td><td>  * api-version -  <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getWaardenCall(String tabelidentificatie, String code, String omschrijving, Boolean inclusiefbeeindigd, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call getWaardenCall(String tabelidentificatie, String omschrijving, Boolean inclusiefbeeindigd, final ApiCallback _callback) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -245,10 +244,6 @@ public class TabelwaardenApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-
-        if (code != null) {
-            localVarQueryParams.addAll(localVarApiClient.parameterToPair("code", code));
-        }
 
         if (omschrijving != null) {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("omschrijving", omschrijving));
@@ -277,7 +272,7 @@ public class TabelwaardenApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call getWaardenValidateBeforeCall(String tabelidentificatie, String code, String omschrijving, Boolean inclusiefbeeindigd, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call getWaardenValidateBeforeCall(String tabelidentificatie, String omschrijving, Boolean inclusiefbeeindigd, final ApiCallback _callback) throws ApiException {
         
         // verify the required parameter 'tabelidentificatie' is set
         if (tabelidentificatie == null) {
@@ -285,16 +280,15 @@ public class TabelwaardenApi {
         }
         
 
-        okhttp3.Call localVarCall = getWaardenCall(tabelidentificatie, code, omschrijving, inclusiefbeeindigd, _callback);
+        okhttp3.Call localVarCall = getWaardenCall(tabelidentificatie, omschrijving, inclusiefbeeindigd, _callback);
         return localVarCall;
 
     }
 
     /**
      * 
-     * Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+     * Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
      * @param tabelidentificatie De identificatie van een landelijke tabel. (required)
-     * @param code De code, behorende bij de tabelwaarde. (optional)
      * @param omschrijving De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)
      * @param inclusiefbeeindigd De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)
      * @return WaardeCollectie
@@ -312,16 +306,15 @@ public class TabelwaardenApi {
         <tr><td> 503 </td><td> Service Unavailable </td><td>  * api-version -  <br>  </td></tr>
      </table>
      */
-    public WaardeCollectie getWaarden(String tabelidentificatie, String code, String omschrijving, Boolean inclusiefbeeindigd) throws ApiException {
-        ApiResponse<WaardeCollectie> localVarResp = getWaardenWithHttpInfo(tabelidentificatie, code, omschrijving, inclusiefbeeindigd);
+    public WaardeCollectie getWaarden(String tabelidentificatie, String omschrijving, Boolean inclusiefbeeindigd) throws ApiException {
+        ApiResponse<WaardeCollectie> localVarResp = getWaardenWithHttpInfo(tabelidentificatie, omschrijving, inclusiefbeeindigd);
         return localVarResp.getData();
     }
 
     /**
      * 
-     * Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+     * Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
      * @param tabelidentificatie De identificatie van een landelijke tabel. (required)
-     * @param code De code, behorende bij de tabelwaarde. (optional)
      * @param omschrijving De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)
      * @param inclusiefbeeindigd De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)
      * @return ApiResponse&lt;WaardeCollectie&gt;
@@ -339,17 +332,16 @@ public class TabelwaardenApi {
         <tr><td> 503 </td><td> Service Unavailable </td><td>  * api-version -  <br>  </td></tr>
      </table>
      */
-    public ApiResponse<WaardeCollectie> getWaardenWithHttpInfo(String tabelidentificatie, String code, String omschrijving, Boolean inclusiefbeeindigd) throws ApiException {
-        okhttp3.Call localVarCall = getWaardenValidateBeforeCall(tabelidentificatie, code, omschrijving, inclusiefbeeindigd, null);
+    public ApiResponse<WaardeCollectie> getWaardenWithHttpInfo(String tabelidentificatie, String omschrijving, Boolean inclusiefbeeindigd) throws ApiException {
+        okhttp3.Call localVarCall = getWaardenValidateBeforeCall(tabelidentificatie, omschrijving, inclusiefbeeindigd, null);
         Type localVarReturnType = new TypeToken<WaardeCollectie>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
      *  (asynchronously)
-     * Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
+     * Het ophalen van de tabelwaarden van een landelijke tabel.&lt;br&gt;Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. &lt;br&gt; Als de parameter &lt;b&gt; inclusief beeindigd &lt;/b&gt; met waarde &lt;i&gt; true &lt;/i&gt;  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.
      * @param tabelidentificatie De identificatie van een landelijke tabel. (required)
-     * @param code De code, behorende bij de tabelwaarde. (optional)
      * @param omschrijving De omschrijving van de tabelwaarde. &lt;br&gt; Bij het zoeken mag er gebruik worden gemaakt van &lt;b&gt;[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)&lt;/b&gt;. &lt;br&gt;Zoeken is &lt;b&gt;[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)&lt;/b&gt;&lt;/a&gt; (optional)
      * @param inclusiefbeeindigd De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd. (optional)
      * @param _callback The callback to be executed when the API call finishes
@@ -368,9 +360,9 @@ public class TabelwaardenApi {
         <tr><td> 503 </td><td> Service Unavailable </td><td>  * api-version -  <br>  </td></tr>
      </table>
      */
-    public okhttp3.Call getWaardenAsync(String tabelidentificatie, String code, String omschrijving, Boolean inclusiefbeeindigd, final ApiCallback<WaardeCollectie> _callback) throws ApiException {
+    public okhttp3.Call getWaardenAsync(String tabelidentificatie, String omschrijving, Boolean inclusiefbeeindigd, final ApiCallback<WaardeCollectie> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = getWaardenValidateBeforeCall(tabelidentificatie, code, omschrijving, inclusiefbeeindigd, _callback);
+        okhttp3.Call localVarCall = getWaardenValidateBeforeCall(tabelidentificatie, omschrijving, inclusiefbeeindigd, _callback);
         Type localVarReturnType = new TypeToken<WaardeCollectie>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
