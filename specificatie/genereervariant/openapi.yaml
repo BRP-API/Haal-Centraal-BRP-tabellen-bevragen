@@ -350,7 +350,7 @@ paths:
       tags:
       - Tabelwaarden
       description: Het ophalen van de tabelwaarden van een landelijke tabel.<br>Als
-        er op omschrijving of code gezocht wordt worden alleen actuele waarden geretourneerd.
+        er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd.
         <br> Als de parameter <b> inclusief beeindigd </b> met waarde <i> true </i>  wordt
         meegegeven bij de call worden ook beeindigde waarden geretourneerd.
       operationId: getWaarden
@@ -361,14 +361,6 @@ paths:
         required: true
         style: simple
         explode: false
-        schema:
-          type: string
-      - name: code
-        in: query
-        description: De code, behorende bij de tabelwaarde.
-        required: false
-        style: form
-        explode: true
         schema:
           type: string
       - name: omschrijving
@@ -845,15 +837,6 @@ components:
       required: true
       style: simple
       explode: false
-      schema:
-        type: string
-    code:
-      name: code
-      in: query
-      description: De code, behorende bij de tabelwaarde.
-      required: false
-      style: form
-      explode: true
       schema:
         type: string
     code_path:
