@@ -30,7 +30,7 @@ import org.openapitools.client.model.InvalidParams;
 /**
  * BadRequestFoutberichtAllOf
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-11-16T17:17:28.473148Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-09-23T08:05:00.076389Z[Etc/UTC]")
 public class BadRequestFoutberichtAllOf {
   public static final String SERIALIZED_NAME_INVALID_PARAMS = "invalidParams";
   @SerializedName(SERIALIZED_NAME_INVALID_PARAMS)

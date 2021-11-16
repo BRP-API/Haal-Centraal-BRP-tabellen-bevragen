@@ -209,7 +209,7 @@ namespace Org.OpenAPITools.Model
                 yield return new System.ComponentModel.DataAnnotations.ValidationResult("Invalid value for NieuweCode, length must be less than 4.", new [] { "NieuweCode" });
             }
 
-
+ 
             yield break;
         }
     }
