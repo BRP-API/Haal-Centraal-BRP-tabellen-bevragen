@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * Waardetabel
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-09-23T08:05:00.076389Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-11-16T17:17:28.473148Z[Etc/UTC]")
 public class Waardetabel {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
