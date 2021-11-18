@@ -14,6 +14,14 @@ Functionaliteit: Als gebruiker wil ik een tabelwaarde kunnen zoeken zonder de di
       Dan wordt er een waarde gevonden met omschrijving="Armenië"
       En wordt er GEEN waarde gevonden met omschrijving="Papua-Nieuwguinea"
 
+    Scenario: Zoek met andere diakriet
+      Als Gemeenten worden gezocht met omschrijving "Noardeast-Fryslán"
+      Dan wordt er GEEN waarde gevonden met omschrijving="Noardeast-Fryslân"
+
+    Scenario: Zoek met zelfde leesteken op andere letter
+      Als Landen worden gezocht met omschrijving "*niü*"
+      Dan wordt er GEEN waarde gevonden met omschrijving="Armenië"    
+
 
   Rule: Wanneer geen diakriet wordt opgegeven in de zoekparameter omschrijving, worden equivalente diakrieten ook gevonden.
 
