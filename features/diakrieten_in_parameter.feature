@@ -41,7 +41,7 @@ Functionaliteit: Als gebruiker wil ik een tabelwaarde kunnen zoeken zonder de di
       Dan wordt er een waarde gevonden met omschrijving="São Tomé en Principe"
 
     Scenario: zoek reden opnemen of beëindigen nationaliteit zonder diakriet
-      Als Reden_Nationaliteit worden gezocht met omschrijving "*Indonesië*"
+      Als Reden_Nationaliteit worden gezocht met omschrijving "*Indonesie*"
       Dan wordt er een waarde gevonden met omschrijving="Toescheidingsovereenkomst Nederland-Indonesië, art. 10"
 
     Scenario: zoek Reden ontbinding/nietigverklaring huwelijk/geregistreerd partnerschap zonder diakriet
