@@ -1,6 +1,6 @@
 # language: nl
 
-Functionaliteit: Als gebruiker wil ik een tabelwaarde kunnen zoeken zonder de diacrieten correct te typen
+Functionaliteit: Als gebruiker wil ik een tabelwaarde kunnen zoeken zonder de diakrieten correct te typen
   
   Rule: Wanneer een diakriet wordt opgegeven in de zoekparameter omschrijving, wordt deze ook gebruikt.
 
@@ -26,7 +26,7 @@ Functionaliteit: Als gebruiker wil ik een tabelwaarde kunnen zoeken zonder de di
   Rule: Wanneer geen diakriet wordt opgegeven in de zoekparameter omschrijving, worden equivalente diakrieten ook gevonden.
 
     Scenario: Zoek gemeente zonder diakriet
-      Als tGemeenten worden gezocht met omschrijving "*lan*"
+      Als Gemeenten worden gezocht met omschrijving "*lan*"
       Dan wordt er een waarde gevonden met omschrijving="Noardeast-Fryslân"
       En wordt er en waarde gevonden met omschrijving="Ameland"
 
