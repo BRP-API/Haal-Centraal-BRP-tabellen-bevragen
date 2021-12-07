@@ -5,7 +5,6 @@ title: Haal Centraal BRP tabellen bevragen
 # Haal Centraal BRP tabellen bevragen
 
 ![lint oas](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/lint-oas/badge.svg)
-![generate sdks](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/generate-sdks/badge.svg)
 ![generate postman collection](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/generate-postman-collection/badge.svg)
 
 API voor het zoeken en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.  
