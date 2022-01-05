@@ -9,9 +9,9 @@ De 'BRP tabellen bevragen' Web API is gespecificeerd in [OpenAPI specifications 
 
 Wil je de API gebruiken? Dit kun je doen:
 
-1. Bekijk de functionaliteit en specificaties
-2. Implementeer de API
-3. Probeer en test de API
+1. [Bekijk de functionaliteit en specificaties](#functionaliteit-en-specificaties)
+2. [Implementeer de API](#bouw-de-api)
+3. [Probeer en test de API](#probeer-en-test-de-api)
 
 ## Functionaliteit en specificaties
 Met deze API kun je:
@@ -28,11 +28,20 @@ Je kunt een visuele representatie van de specificatie bekijken met [Swagger UI](
 
 Je kunt de [functionele documentatie](./features) vinden in de [features](./features).
 
-## Implementeer de API
+## Bouw de API
+Client code kan worden gegenereerd vanuit de "[genereervariant](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}" van de API-specificaties en een code generator. Een overzicht van code generatoren is te vinden op [OpenAPI.Tools](https://openapi.tools/#sdk){:target="_blank" rel="noopener"}.
 
-Je kunt code genereren op basis van de [genereervariant van de specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}.
+Deze repo bevat scripts waarmee met behulp van [OpenAPI Generator](https://openapi-generator.tech/){:target="_blank" rel="noopener"} client code kan worden gegenereerd in JAVA, .NET (Full Framework & Core) en Python. De makkelijkste manier om de code generatie scripts te gebruiken, is door deze repo te clonen. Na het clonen kan met `npm install` de benodigde packages worden geïnstalleerd. Vervolgens kan met `npm run <script naam>` één van de volgende scripts worden uitgevoerd:
+- oas:generate-java-client (voor JAVA client code)
+- oas:generate-netcore-client (voor .NET Core client code)
+- oas:generate-net-client (voor .NET Full Framework client code)
+- oas:generate-python-client (voor Python client code)
 
-## Probeer en test
+Een lijst met andere ondersteunde generator opties is te vinden in de [Generators List](https://openapi-generator.tech/docs/generators){:target="_blank" rel="noopener"} van OpenAPI Generator.
+
+Note. De prerequisite OpenAPI Generator is JAVA. Een JAVA runtime moet worden geïnstalleerd voordat OpenAPI Generator kan worden gebruikt.
+
+## Probeer en test de API
 Wil je de 'BRP tabellen bevragen' Web API proberen en testen? Kijk op: `https://www.haalcentraal.nl/haalcentraal/api/landelijke_tabellen`
 
 Om de web api te gebruiken heb je een apikey nodig. Deze voeg je aan een request toe als header "X-API-KEY". Een API-key vraag je aan bij de product owner [cathy.dingemanse@denhaag.nl](mailto:cathy.dingemanse@denhaag.nl).
