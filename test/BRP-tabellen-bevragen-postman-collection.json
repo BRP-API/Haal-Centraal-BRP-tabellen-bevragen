@@ -1,1 +1,1785 @@
-
+{
+    "item": [
+        {
+            "id": "69e26052-b3ee-4a90-9995-d50eb125b0ef",
+            "name": "tabellen",
+            "item": [
+                {
+                    "id": "4d542c3c-bd9b-4a5e-a142-ee688873d42c",
+                    "name": "get Tabellen",
+                    "request": {
+                        "name": "get Tabellen",
+                        "description": {
+                            "content": "Het ophalen van een collectie landelijke tabellen.",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "tabellen"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [
+                                {
+                                    "disabled": false,
+                                    "key": "tabelidentificatie",
+                                    "value": "<string>",
+                                    "description": "De identificatie van een landelijke tabel."
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "omschrijving",
+                                    "value": "<string>",
+                                    "description": "De naam van de tabel. <br> Bij het zoeken mag er gebruik worden gemaakt van <b>[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)</b>.<br>Zoeken is <b>[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)</b></a>"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "7efae8af-7452-4f44-9b74-d42c0ddc17e6",
+                            "name": "Zoekactie geslaagd",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "disabled": false,
+                                    "key": "warning",
+                                    "value": "299 https://service.../api/.../v1 \"Deze versie van de API is verouderd en zal uit dienst worden genomen op 2018-02-01. Raadpleeg voor meer informatie hier de documentatie: https://omgevingswet.../api/.../v1\".",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n \"tabellen\": [\n  {\n   \"tabelidentificatie\": \"Reden_Nationaliteit\",\n   \"omschrijving\": \"Reden opnemen - beeindigen Nationaliteit\"\n  },\n  {\n   \"tabelidentificatie\": \"Reden_Nationaliteit\",\n   \"omschrijving\": \"Reden opnemen - beeindigen Nationaliteit\"\n  }\n ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "5dfda4cc-7b5e-4e64-9c6f-f76fac75cc4c",
+                            "name": "Bad Request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1\",\n \"title\": \"Ten minste één parameter moet worden opgegeven.\",\n \"status\": 400,\n \"detail\": \"The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modification.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"paramsRequired\",\n \"invalidParams\": [\n  {\n   \"type\": \"https://www.vng.nl/realisatie/api/validaties/integer\",\n   \"name\": \"verblijfplaats__huisnummer\",\n   \"code\": \"integer\",\n   \"reason\": \"Waarde is geen geldige integer.\"\n  }\n ]\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "769d5f03-712d-436d-bdf3-c56956892f5e",
+                            "name": "Unauthorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2\",\n \"title\": \"Niet correct geauthenticeerd.\",\n \"status\": 401,\n \"detail\": \"The request requires user authentication. The response MUST include a WWW-Authenticate header field (section 14.47) containing a challenge applicable to the requested resource.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"authentication\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "bc0753ec-827d-4e54-80b7-ecf5f9c3df65",
+                            "name": "Forbidden",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Forbidden",
+                            "code": 403,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4\",\n \"title\": \"U bent niet geautoriseerd voor deze operatie.\",\n \"status\": 403,\n \"detail\": \"The server understood the request, but is refusing to fulfill it.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"autorisation\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "9cba2afb-91e0-4101-86ca-d967dc0c6975",
+                            "name": "Not Acceptable",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Acceptable",
+                            "code": 406,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7\",\n \"title\": \"Gevraagde contenttype wordt niet ondersteund.\",\n \"status\": 406,\n \"detail\": \"The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to thr accept headers sent in the request\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAcceptable\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "09848119-2d20-47ec-916c-56276326756d",
+                            "name": "Internal Server Error",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Internal Server Error",
+                            "code": 500,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1\",\n \"title\": \"Interne server fout.\",\n \"status\": 500,\n \"detail\": \"The server encountered an unexpected condition which prevented it from fulfilling the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"serverError\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "33d0c0d7-9508-4e47-8544-862a6593cdb3",
+                            "name": "Not Implemented",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Implemented",
+                            "code": 501,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2\",\n \"title\": \"Not Implemented\",\n \"status\": 501,\n \"detail\": \"The server does not support the functionality required to fulfill the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notImplemented\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "21179d9a-ad27-4cd3-ae97-de43bf22481e",
+                            "name": "Service Unavailable",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "tabellen"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [
+                                        {
+                                            "key": "tabelidentificatie",
+                                            "value": "<string>"
+                                        },
+                                        {
+                                            "key": "omschrijving",
+                                            "value": "<string>"
+                                        }
+                                    ],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Service Unavailable",
+                            "code": 503,
+                            "header": [
+                                {
+                                    "disabled": false,
+                                    "key": "api-version",
+                                    "value": "1.0.0",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/problem+json"
+                                }
+                            ],
+                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4\",\n \"title\": \"Bronservice {bron} is tijdelijk niet beschikbaar.\",\n \"status\": 503,\n \"detail\": \"The service is currently unable to handle the request due to a temporary overloading or maintenance of the server.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAvailable\"\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "5073cd68-05cb-4779-a447-0559acbb8b6a",
+                    "name": "{tabelidentificatie}",
+                    "item": [
+                        {
+                            "id": "0772fb43-9abb-44e9-be36-dd2af2ca18c7",
+                            "name": "get Tabel",
+                            "request": {
+                                "name": "get Tabel",
+                                "description": {
+                                    "content": "Het ophalen van de gegevens van een enkele landelijke tabel",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "tabellen",
+                                        ":tabelidentificatie"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "tabelidentificatie",
+                                            "description": "(Required) De identificatie van een landelijke tabel."
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "auth": null
+                            },
+                            "response": [
+                                {
+                                    "id": "b28dcc0e-7f7a-459a-88ce-ebebb8abcb3b",
+                                    "name": "Zoekactie geslaagd",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "key": "warning",
+                                            "value": "299 https://service.../api/.../v1 \"Deze versie van de API is verouderd en zal uit dienst worden genomen op 2018-02-01. Raadpleeg voor meer informatie hier de documentatie: https://omgevingswet.../api/.../v1\".",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/hal+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"tabelidentificatie\": \"Reden_Nationaliteit\",\n \"omschrijving\": \"Reden opnemen - beeindigen Nationaliteit\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "5cbe1528-999d-40c1-a263-eacf4e05c879",
+                                    "name": "Bad Request",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1\",\n \"title\": \"Ten minste één parameter moet worden opgegeven.\",\n \"status\": 400,\n \"detail\": \"The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modification.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"paramsRequired\",\n \"invalidParams\": [\n  {\n   \"type\": \"https://www.vng.nl/realisatie/api/validaties/integer\",\n   \"name\": \"verblijfplaats__huisnummer\",\n   \"code\": \"integer\",\n   \"reason\": \"Waarde is geen geldige integer.\"\n  }\n ]\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "a8966a72-e338-40a1-8ef1-da0dcaced0bb",
+                                    "name": "Unauthorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2\",\n \"title\": \"Niet correct geauthenticeerd.\",\n \"status\": 401,\n \"detail\": \"The request requires user authentication. The response MUST include a WWW-Authenticate header field (section 14.47) containing a challenge applicable to the requested resource.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"authentication\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "b9b524ae-365e-421c-a72b-f4e9739a3ea9",
+                                    "name": "Forbidden",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Forbidden",
+                                    "code": 403,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4\",\n \"title\": \"U bent niet geautoriseerd voor deze operatie.\",\n \"status\": 403,\n \"detail\": \"The server understood the request, but is refusing to fulfill it.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"autorisation\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "656d4a06-28f0-4feb-9062-2c8b86315efc",
+                                    "name": "Not Found",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Not Found",
+                                    "code": 404,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5\",\n \"title\": \"Opgevraagde resource bestaat niet.\",\n \"status\": 404,\n \"detail\": \"The server has not found anything matching the Request-URI.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notFound\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "78bda787-e557-4c63-b3f6-1fd99b87fdb8",
+                                    "name": "Not Acceptable",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Not Acceptable",
+                                    "code": 406,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7\",\n \"title\": \"Gevraagde contenttype wordt niet ondersteund.\",\n \"status\": 406,\n \"detail\": \"The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to thr accept headers sent in the request\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAcceptable\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "16e8036a-3a2e-46e1-85ef-5ed0ba78d960",
+                                    "name": "Internal Server Error",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Internal Server Error",
+                                    "code": 500,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1\",\n \"title\": \"Interne server fout.\",\n \"status\": 500,\n \"detail\": \"The server encountered an unexpected condition which prevented it from fulfilling the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"serverError\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "91301a22-8db0-4e06-8a49-f7b1db3e37ce",
+                                    "name": "Not Implemented",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Not Implemented",
+                                    "code": 501,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2\",\n \"title\": \"Not Implemented\",\n \"status\": 501,\n \"detail\": \"The server does not support the functionality required to fulfill the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notImplemented\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "c41f909e-00b1-46e0-b3f5-035f3db1c38a",
+                                    "name": "Service Unavailable",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "tabelidentificatie"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Service Unavailable",
+                                    "code": 503,
+                                    "header": [
+                                        {
+                                            "disabled": false,
+                                            "key": "api-version",
+                                            "value": "1.0.0",
+                                            "description": ""
+                                        },
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/problem+json"
+                                        }
+                                    ],
+                                    "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4\",\n \"title\": \"Bronservice {bron} is tijdelijk niet beschikbaar.\",\n \"status\": 503,\n \"detail\": \"The service is currently unable to handle the request due to a temporary overloading or maintenance of the server.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAvailable\"\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "22c52e1d-c920-4aff-b81e-28e669fc88fd",
+                            "name": "waarden",
+                            "item": [
+                                {
+                                    "id": "974d3aa4-b04b-4c6d-bb57-c7b9714322fa",
+                                    "name": "get Waarden",
+                                    "request": {
+                                        "name": "get Waarden",
+                                        "description": {
+                                            "content": "Het ophalen van de tabelwaarden van een landelijke tabel.<br>Als er op omschrijving gezocht wordt worden alleen actuele waarden geretourneerd. <br> Als de parameter <b> inclusief beeindigd </b> met waarde <i> true </i>  wordt meegegeven bij de call worden ook beeindigde waarden geretourneerd.",
+                                            "type": "text/plain"
+                                        },
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie",
+                                                "waarden"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "omschrijving",
+                                                    "value": "<string>",
+                                                    "description": "De omschrijving van de tabelwaarde. <br> Bij het zoeken mag er gebruik worden gemaakt van <b>[wildcards](https://github.com/VNG-Realisatie/Haal-Centraal-common/blob/master/features/wildcard.feature)</b>. <br>Zoeken is <b>[case-Insensitive](https://github.com/VNG-Realisatie/Bevragingen-ingeschreven-personen/blob/master/features/case_insensitive.feature)</b></a>"
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "key": "inclusiefbeeindigd",
+                                                    "value": "<boolean>",
+                                                    "description": "De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd."
+                                                }
+                                            ],
+                                            "variable": [
+                                                {
+                                                    "disabled": false,
+                                                    "type": "any",
+                                                    "value": "<string>",
+                                                    "key": "tabelidentificatie",
+                                                    "description": "(Required) De identificatie van een landelijke tabel."
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "auth": null
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "212a4926-59ab-4c8e-977a-25aa6cc82540",
+                                            "name": "Zoekactie geslaagd",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "key": "warning",
+                                                    "value": "299 https://service.../api/.../v1 \"Deze versie van de API is verouderd en zal uit dienst worden genomen op 2018-02-01. Raadpleeg voor meer informatie hier de documentatie: https://omgevingswet.../api/.../v1\".",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/json"
+                                                }
+                                            ],
+                                            "body": "{\n \"waarden\": [\n  {\n   \"code\": \"6030\",\n   \"omschrijving\": \"Nederland\",\n   \"datumEinde\": \"1999-12-28\",\n   \"datumIngang\": \"2020-12-15\",\n   \"nieuweCode\": \"Exc\",\n   \"soort\": \"VK\"\n  },\n  {\n   \"code\": \"6030\",\n   \"omschrijving\": \"Nederland\",\n   \"datumEinde\": \"2003-01-20\",\n   \"datumIngang\": \"1993-06-13\",\n   \"nieuweCode\": \"lab\",\n   \"soort\": \"VK\"\n  }\n ]\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "fcf68fa0-eb08-423d-8190-d57f12f05a15",
+                                            "name": "Bad Request",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Bad Request",
+                                            "code": 400,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1\",\n \"title\": \"Ten minste één parameter moet worden opgegeven.\",\n \"status\": 400,\n \"detail\": \"The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modification.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"paramsRequired\",\n \"invalidParams\": [\n  {\n   \"type\": \"https://www.vng.nl/realisatie/api/validaties/integer\",\n   \"name\": \"verblijfplaats__huisnummer\",\n   \"code\": \"integer\",\n   \"reason\": \"Waarde is geen geldige integer.\"\n  }\n ]\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "afbcac38-f375-48f5-ae66-b3b375d6b195",
+                                            "name": "Unauthorized",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Unauthorized",
+                                            "code": 401,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2\",\n \"title\": \"Niet correct geauthenticeerd.\",\n \"status\": 401,\n \"detail\": \"The request requires user authentication. The response MUST include a WWW-Authenticate header field (section 14.47) containing a challenge applicable to the requested resource.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"authentication\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "46ee4d26-e746-4151-ab77-4bb8425585c6",
+                                            "name": "Forbidden",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Forbidden",
+                                            "code": 403,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4\",\n \"title\": \"U bent niet geautoriseerd voor deze operatie.\",\n \"status\": 403,\n \"detail\": \"The server understood the request, but is refusing to fulfill it.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"autorisation\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "ebc8d5c4-2a07-49a8-a9a6-9d0e5317ada2",
+                                            "name": "Not Acceptable",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Not Acceptable",
+                                            "code": 406,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7\",\n \"title\": \"Gevraagde contenttype wordt niet ondersteund.\",\n \"status\": 406,\n \"detail\": \"The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to thr accept headers sent in the request\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAcceptable\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "89c17734-0aa0-4788-9a9c-240cb2e6e23d",
+                                            "name": "Internal Server Error",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Internal Server Error",
+                                            "code": 500,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1\",\n \"title\": \"Interne server fout.\",\n \"status\": 500,\n \"detail\": \"The server encountered an unexpected condition which prevented it from fulfilling the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"serverError\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "dda92d98-f906-4ae7-b134-ad091e0d276c",
+                                            "name": "Not Implemented",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Not Implemented",
+                                            "code": 501,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2\",\n \"title\": \"Not Implemented\",\n \"status\": 501,\n \"detail\": \"The server does not support the functionality required to fulfill the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notImplemented\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "6587b51a-a7c7-4790-a873-a967630a77ff",
+                                            "name": "Service Unavailable",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [
+                                                        {
+                                                            "key": "omschrijving",
+                                                            "value": "<string>"
+                                                        },
+                                                        {
+                                                            "key": "inclusiefbeeindigd",
+                                                            "value": "<boolean>"
+                                                        }
+                                                    ],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Service Unavailable",
+                                            "code": 503,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4\",\n \"title\": \"Bronservice {bron} is tijdelijk niet beschikbaar.\",\n \"status\": 503,\n \"detail\": \"The service is currently unable to handle the request due to a temporary overloading or maintenance of the server.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAvailable\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        }
+                                    ],
+                                    "event": []
+                                },
+                                {
+                                    "id": "181a883a-6ba8-429d-9b8a-dd0e3bfa3488",
+                                    "name": "get Waarde",
+                                    "request": {
+                                        "name": "get Waarde",
+                                        "description": {
+                                            "content": "Het ophalen van de gegevens van een enkele waarde uit een landelijke tabel.",
+                                            "type": "text/plain"
+                                        },
+                                        "url": {
+                                            "path": [
+                                                "tabellen",
+                                                ":tabelidentificatie",
+                                                "waarden",
+                                                ":code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "disabled": false,
+                                                    "type": "any",
+                                                    "value": "<string>",
+                                                    "key": "tabelidentificatie",
+                                                    "description": "(Required) De identificatie van een landelijke tabel."
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "type": "any",
+                                                    "value": "<string>",
+                                                    "key": "code",
+                                                    "description": "(Required) De code, behorende bij de tabelwaarde."
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "auth": null
+                                    },
+                                    "response": [
+                                        {
+                                            "id": "9ba3d7f9-3bdf-4a58-bb08-6526e814ab26",
+                                            "name": "Zoekactie geslaagd",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "key": "warning",
+                                                    "value": "299 https://service.../api/.../v1 \"Deze versie van de API is verouderd en zal uit dienst worden genomen op 2018-02-01. Raadpleeg voor meer informatie hier de documentatie: https://omgevingswet.../api/.../v1\".",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/json"
+                                                }
+                                            ],
+                                            "body": "{\n \"code\": \"6030\",\n \"omschrijving\": \"Nederland\",\n \"datumEinde\": \"2002-04-26\",\n \"datumIngang\": \"1969-04-18\",\n \"nieuweCode\": \"eius\",\n \"soort\": \"VK\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "62c1c1ca-94c9-42d3-81d2-8842bb6a9475",
+                                            "name": "Bad Request",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Bad Request",
+                                            "code": 400,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1\",\n \"title\": \"Ten minste één parameter moet worden opgegeven.\",\n \"status\": 400,\n \"detail\": \"The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modification.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"paramsRequired\",\n \"invalidParams\": [\n  {\n   \"type\": \"https://www.vng.nl/realisatie/api/validaties/integer\",\n   \"name\": \"verblijfplaats__huisnummer\",\n   \"code\": \"integer\",\n   \"reason\": \"Waarde is geen geldige integer.\"\n  }\n ]\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "97bf9f73-cabe-44fd-8793-601be9ceb7c0",
+                                            "name": "Unauthorized",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Unauthorized",
+                                            "code": 401,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2\",\n \"title\": \"Niet correct geauthenticeerd.\",\n \"status\": 401,\n \"detail\": \"The request requires user authentication. The response MUST include a WWW-Authenticate header field (section 14.47) containing a challenge applicable to the requested resource.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"authentication\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "3e25b2f2-f67e-41b4-ae68-7b689f69475c",
+                                            "name": "Forbidden",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Forbidden",
+                                            "code": 403,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4\",\n \"title\": \"U bent niet geautoriseerd voor deze operatie.\",\n \"status\": 403,\n \"detail\": \"The server understood the request, but is refusing to fulfill it.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"autorisation\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "1a5a7e31-3ce1-487e-8a0e-ca2e19a15226",
+                                            "name": "Not Found",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Not Found",
+                                            "code": 404,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5\",\n \"title\": \"Opgevraagde resource bestaat niet.\",\n \"status\": 404,\n \"detail\": \"The server has not found anything matching the Request-URI.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notFound\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "2199dae9-1b2d-4afa-b3a6-d6f075b209d7",
+                                            "name": "Not Acceptable",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Not Acceptable",
+                                            "code": 406,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.7\",\n \"title\": \"Gevraagde contenttype wordt niet ondersteund.\",\n \"status\": 406,\n \"detail\": \"The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to thr accept headers sent in the request\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAcceptable\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "3d9478a8-1e50-4a41-a2a4-32dbb60b9c40",
+                                            "name": "Internal Server Error",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Internal Server Error",
+                                            "code": 500,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1\",\n \"title\": \"Interne server fout.\",\n \"status\": 500,\n \"detail\": \"The server encountered an unexpected condition which prevented it from fulfilling the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"serverError\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "800c0d4f-b894-4407-b339-45aebbcebedd",
+                                            "name": "Not Implemented",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Not Implemented",
+                                            "code": 501,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.2\",\n \"title\": \"Not Implemented\",\n \"status\": 501,\n \"detail\": \"The server does not support the functionality required to fulfill the request.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notImplemented\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        },
+                                        {
+                                            "id": "fee8da6a-c39c-4b42-b92d-67f6dda6f5d6",
+                                            "name": "Service Unavailable",
+                                            "originalRequest": {
+                                                "url": {
+                                                    "path": [
+                                                        "tabellen",
+                                                        ":tabelidentificatie",
+                                                        "waarden",
+                                                        ":code"
+                                                    ],
+                                                    "host": [
+                                                        "{{baseUrl}}"
+                                                    ],
+                                                    "query": [],
+                                                    "variable": [
+                                                        {
+                                                            "type": "any",
+                                                            "key": "tabelidentificatie"
+                                                        },
+                                                        {
+                                                            "type": "any",
+                                                            "key": "code"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": "GET",
+                                                "body": {}
+                                            },
+                                            "status": "Service Unavailable",
+                                            "code": 503,
+                                            "header": [
+                                                {
+                                                    "disabled": false,
+                                                    "key": "api-version",
+                                                    "value": "1.0.0",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "key": "Content-Type",
+                                                    "value": "application/problem+json"
+                                                }
+                                            ],
+                                            "body": "{\n \"type\": \"https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.4\",\n \"title\": \"Bronservice {bron} is tijdelijk niet beschikbaar.\",\n \"status\": 503,\n \"detail\": \"The service is currently unable to handle the request due to a temporary overloading or maintenance of the server.\",\n \"instance\": \"https://datapunt.voorbeeldgemeente.nl/api/v1/resourcenaam?parameter=waarde\",\n \"code\": \"notAvailable\"\n}",
+                                            "cookie": [],
+                                            "_postman_previewlanguage": "json"
+                                        }
+                                    ],
+                                    "event": []
+                                }
+                            ],
+                            "event": []
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "id": "baseUrl",
+            "type": "string",
+            "value": "https://virtserver.swaggerhub.com/VNGRealisatie/api/landelijke_tabellen/"
+        }
+    ],
+    "info": {
+        "_postman_id": "fd647066-a708-4eca-84a1-0ad0513acc64",
+        "name": "Landelijke tabellen",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "API voor het ontsluiten van landelijke tabellen die op de website van BZK worden gepubliceerd.",
+            "type": "text/plain"
+        }
+    }
+}
