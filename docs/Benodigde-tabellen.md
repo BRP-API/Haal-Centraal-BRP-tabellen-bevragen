@@ -19,3 +19,9 @@ Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar w
 | Reden opname/beëindigen nationaliteit | Landelijke tabel 37                                          |                                           |
 | SoortVerbintenis                      | Mogelijke waarden uit LO GBA 3.14 Element 15.10              | Soort verbintenis                         |
 | Verblijfstitel                        | Landelijke tabbel 56                                         |                                           |
+
+Voor de Reisdocumenten-bevragen API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+
+| tabelidentificatie                | bron voor waarden               | 
+| --------------------------------- | ------------------------------- |
+| Inhouding_Vermissing_Reisdocument | mogelijke waarden element 11.50 |
