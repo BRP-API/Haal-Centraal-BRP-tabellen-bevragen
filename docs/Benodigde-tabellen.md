@@ -32,4 +32,5 @@ Voor de Reisdocumenten-bevragen API moeten minimaal de volgende tabellen beschik
 | tabelidentificatie                | bron                 |
 |-----------------------------------|----------------------|
 | Nederlands_Reisdocument           | Landelijke tabel 48  |
+| Autoriteit_Afgifte_Reisdocument   | Landelijke tabel 49  |
 | Inhouding_Vermissing_Reisdocument | LO GBA element 11.50 |
