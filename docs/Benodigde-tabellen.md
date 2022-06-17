@@ -1,27 +1,28 @@
 Noot: De landelijke tabellen zijn gepubliceerd op https://publicaties.rvig.nl/Landelijke_tabellen/Landelijke_tabellen_32_t_m_61_excl_tabel_35
 
+Tabellen met als bron een LO GBA element staan beschreven in de [tabelwaarden.feature](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/blob/develop/features/tabelwaarden.feature)
+
 Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
 
-| tabel                                 | bron                                                         | veld                                      |
-| ------------------------------------- | ------------------------------------------------------------ | ----------------------------------------- |
-| Aanduiding bij huisnummer             | Mogelijke waarden uit het LO GBA Element 11.50               | Aanduiding bij huisnummer                 |
-| Aanduiding bijzonder Nederlanderschap | Mogelijke waarden uit het LO GBA Element 65.10               | Aanduiding bijzonder Nederlanderschap     |
-| AdellijkeTitelPredicaat               | Landelijke tabel 38                                          |                                           |
-| EuropeesKiesrecht                     | Mogelijke waarden uit het LO GBA Element 31.10               | Europees Kiesrecht                        |
-| FunctieAdres                          | Mogelijke waarden uit het LO GBA Element 10.10               | Functie Adres                             |
-| Gemeenten                             | Landelijke tabel 33                                          |                                           |
-| Geslacht                              | Mogelijke waarden uit het LO GBA 3.14 Element 04.10          | Geslachtsaanduiding                       |
-| Gezagsverhouding                      | Landelijke tabel 61                                          |                                           |
-| Landen                                | Landelijke tabel 34                                          |                                           |
-| Naamgebruik                           | Mogelijke waarden uit het LO GBA Element 61.10               | Aanduiding naamgebruik                    |
-| Nationaliteiten                       | Landelijke tabel 32                                          |                                           |
-| RedenopschortingBijhouding            | Mogelijke waarden uit LO GBA 3.14 Element 67.20              | Omschrijving Reden Opschorting Bijhouding |
-| Reden opname/beëindigen nationaliteit | Landelijke tabel 37                                          |                                           |
-| SoortVerbintenis                      | Mogelijke waarden uit LO GBA 3.14 Element 15.10              | Soort verbintenis                         |
-| Verblijfstitel                        | Landelijke tabbel 56                                         |                                           |
+| tabelidentificatie           | bron voor waarden    |
+|------------------------------|----------------------|
+| Aanduiding_Bij_Huisnummer    | LO GBA element 11.50 |
+| Adellijke_Titel_Predicaat    | Landelijke tabel 38  |
+| Europees_Kiesrecht           | LO GBA element 31.10 |
+| Functie_Adres                | LO GBA element 10.10 |
+| Gemeenten                    | Landelijke tabel 33  |
+| Geslacht                     | LO GBA element 04.10 |
+| Gezagsverhouding             | Landelijke tabel 61  |
+| Landen                       | Landelijke tabel 34  |
+| Naamgebruik                  | LO GBA element 61.10 |
+| Nationaliteiten              | Landelijke tabel 32  |
+| Reden_Opschorting_Bijhouding | LO GBA element 67.20 |
+| Reden_Nationaliteit          | Landelijke tabel 37  |
+| Soort_Verbintenis            | LO GBA element 15.10 |
+| Verblijfstitel               | Landelijke tabel 56  |
 
 Voor de Reisdocumenten-bevragen API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
 
-| tabelidentificatie                | bron voor waarden               | 
-| --------------------------------- | ------------------------------- |
-| Inhouding_Vermissing_Reisdocument | mogelijke waarden element 11.50 |
+| tabelidentificatie                | bron                 |
+|-----------------------------------|----------------------|
+| Inhouding_Vermissing_Reisdocument | LO GBA element 11.50 |
