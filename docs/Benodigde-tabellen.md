@@ -4,7 +4,7 @@ Tabellen met als bron een LO GBA element staan beschreven in de [tabelwaarden.fe
 
 Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
 
-| tabelidentificatie           | bron voor waarden    |
+| tabelidentificatie           | bron                 |
 |------------------------------|----------------------|
 | Aanduiding_Bij_Huisnummer    | LO GBA element 11.50 |
 | Adellijke_Titel_Predicaat    | Landelijke tabel 38  |
@@ -16,10 +16,16 @@ Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar w
 | Landen                       | Landelijke tabel 34  |
 | Naamgebruik                  | LO GBA element 61.10 |
 | Nationaliteiten              | Landelijke tabel 32  |
-| Reden_Opschorting_Bijhouding | LO GBA element 67.20 |
 | Reden_Nationaliteit          | Landelijke tabel 37  |
+| Reden_Opschorting_Bijhouding | LO GBA element 67.20 |
 | Soort_Verbintenis            | LO GBA element 15.10 |
 | Verblijfstitel               | Landelijke tabel 56  |
+
+Voor de BRP-historie API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+
+| tabelidentificatie        | bron                |
+|---------------------------|---------------------|
+| Reden_Beeindigen_Huwelijk | Landelijke tabel 41 |
 
 Voor de Reisdocumenten-bevragen API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
 
