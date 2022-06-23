@@ -2,6 +2,8 @@
 
 Noot: De landelijke tabellen zijn gepubliceerd op https://publicaties.rvig.nl/Landelijke_tabellen/Landelijke_tabellen_32_t_m_61_excl_tabel_35
 
+Mogelijke waarden van LO GBA elementen staan in tabelwaarden.csv
+
 ## BRP-Personen-Bevragen
 
 Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
@@ -34,100 +36,14 @@ Voor de BRP-historie API moeten minimaal de volgende tabellen beschikbaar worden
 ## BRP-Bewoning
 
 Voor de BRP-Bewoning API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
-| tabelidentificatie      | bron                                                         | omschrijving                                            |
-|-------------------------|--------------------------------------------------------------|---------------------------------------------------------|
-| Reden_Bewoning_Onbekend | Types verblijfplaats zonder adresseerbaarObjectIdentivicatie | Reden dat bewoning en bewoners niet kan worden bepaald. |
+| tabelidentificatie      | bron             | omschrijving                                            |
+|-------------------------|------------------|---------------------------------------------------------|
+| Reden_Bewoning_Onbekend | tabelwaarden.csv | Reden dat bewoning en bewoners niet kan worden bepaald. |
 
 ## Reisdocumenten-bevragen
 
-Voor de Reisdocumenten-bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
-| tabelidentificatie      | bron                          | omschrijving                    |
-|-------------------------|-------------------------------|---------------------------------|
-| Nederlands_Reisdocument | Landelijke tabel 48           | Nederlands Reisdocument         |
-| Geldig_Reisdocument     | geldig, niet-geldig, onbekend | Geldigheid van een reisdocument |
-
-# Mogelijke waarden LO GBA elementen
-
-## Aanduiding_Bij_Huisnummer
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving                     |
-  | ---------- | -------------------------------- |
-  | to         | tegenover                        |
-  | by         | bij                              |
-
-## Geslacht
-  
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving                     |
-  | ---------- | -------------------------------- |
-  | M          | man                              |
-  | V          | vrouw                            |
-  | O          | onbekend                         |
-
-## Naamgebruik
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving                                                            |
-  | ---------- | ----------------------------------------------------------------------- |
-  | E          | eigen geslachtsnaam                                                     |
-  | N          | geslachtsnaam echtgenoot/geregistreerd partner na eigen geslachtsnaam   |
-  | P          | geslachtsnaam echtgenoot/geregistreerd partner                          |
-  | V          | geslachtsnaam echtgenoot/geregistreerd partner voor eigen geslachtsnaam |
-
-## Reden_Opschorting_Bijhouding
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving              |
-  | ---------- | ------------------------- |
-  | O          | overlijden                |
-  | E          | emigratie                 |
-  | M          | ministerieel besluit      |
-  | R          | pl is aangelegd in de rni |
-  | F          | fout                      |
-  | .          | onbekend                  |
-
-## Soort_Verbintenis
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving                         |
-  | ---------- | ------------------------------------ |
-  | H          | huwelijk                             |
-  | P          | geregistreerd partnerschap           |
-  | .          | onbekend                             |
-
-## Functie_Adres
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving                         |
-  | ---------- | ------------------------------------ |
-  | W          | woonadres                            |
-  | B          | briefadres                           |
-
-## Europees_Kiesrecht
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code       | omschrijving                         |
-  | ---------- | ------------------------------------ |
-  | 1          | persoon is uitgesloten               |
-  | 2          | persoon ontvangt oproep              |
-
-
-## Reden_Bewoning_Onbekend
-  
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code             | omschrijving                                                                                  |
-  | ----------       | ------------------------------------                                                          |
-  | NIET_ADRES_ADRES | voor een adres zonder BAG adresseerbaar object identificatie kan geen bewoning worden bepaald |
-  | LOCATIE          | voor een locatiebeschrijving kan geen bewoning worden bepaald                                 |
-  | BUITENLAND       | voor een verblijfplaats in het buitenland kan geen bewoning worden bepaald                    |
-  | ONBEKEND         | de verblijfplaats is onbekend                                                                 |
-
-## Geldig_Reisdocument
-
-  In de waardetabel worden de volgende waarden opgenomen:
-  | code | omschrijving                               |
-  |------|--------------------------------------------|
-  | G    | Reisdocument is geldig                     |
-  | N    | Reisdocument is niet geldig                |
-  | O    | De status van het reisdocument is onbekend |
+Voor de Reisdocumenten-bevragen API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+| tabelidentificatie      | bron                | omschrijving                    |
+|-------------------------|---------------------|---------------------------------|
+| Nederlands_Reisdocument | Landelijke tabel 48 | Nederlands Reisdocument         |
+| Geldig_Reisdocument     | tabelwaarden.csv    | Geldigheid van een reisdocument |
