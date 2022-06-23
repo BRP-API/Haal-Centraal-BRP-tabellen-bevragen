@@ -41,9 +41,10 @@ Voor de BRP-Bewoning API moeten minimaal de volgende tabellen beschikbaar worden
 ## Reisdocumenten-bevragen
 
 Voor de Reisdocumenten-bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
-| tabelidentificatie      | bron                                                         | omschrijving                                            |
-|-------------------------|--------------------------------------------------------------|---------------------------------------------------------|
-| Nederlands_Reisdocument | Landelijke tabel 48 | Nederlands Reisdocument |
+| tabelidentificatie      | bron                          | omschrijving                    |
+|-------------------------|-------------------------------|---------------------------------|
+| Nederlands_Reisdocument | Landelijke tabel 48           | Nederlands Reisdocument         |
+| Geldig_Reisdocument     | geldig, niet-geldig, onbekend | Geldigheid van een reisdocument |
 
 # Mogelijke waarden LO GBA elementen
 
@@ -121,3 +122,12 @@ Voor de Reisdocumenten-bevragen moeten minimaal de volgende tabellen beschikbaar
   | LOCATIE          | voor een locatiebeschrijving kan geen bewoning worden bepaald                                 |
   | BUITENLAND       | voor een verblijfplaats in het buitenland kan geen bewoning worden bepaald                    |
   | ONBEKEND         | de verblijfplaats is onbekend                                                                 |
+
+## Geldig_Reisdocument
+
+  In de waardetabel worden de volgende waarden opgenomen:
+  | code | omschrijving                               |
+  |------|--------------------------------------------|
+  | G    | Reisdocument is geldig                     |
+  | N    | Reisdocument is niet geldig                |
+  | O    | De status van het reisdocument is onbekend |
