@@ -38,6 +38,13 @@ Voor de BRP-Bewoning API moeten minimaal de volgende tabellen beschikbaar worden
 |-------------------------|--------------------------------------------------------------|---------------------------------------------------------|
 | Reden_Bewoning_Onbekend | Types verblijfplaats zonder adresseerbaarObjectIdentivicatie | Reden dat bewoning en bewoners niet kan worden bepaald. |
 
+## Reisdocumenten-bevragen
+
+Voor de Reisdocumenten-bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+| tabelidentificatie      | bron                                                         | omschrijving                                            |
+|-------------------------|--------------------------------------------------------------|---------------------------------------------------------|
+| Nederlands_Reisdocument | Landelijke tabel 48 | Nederlands Reisdocument |
+
 # Mogelijke waarden LO GBA elementen
 
 ## Aanduiding_Bij_Huisnummer
