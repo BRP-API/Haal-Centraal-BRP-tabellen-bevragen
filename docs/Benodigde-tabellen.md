@@ -27,7 +27,7 @@ Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar w
 
 ## BRP-historie
 
-Voor de BRP-historie API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+Voor de BRP-historie API moeten minimaal de volgende tabellen beschikbaar worden gemaakt (bovenop wat voor BRP-Personen-Bevragen aan tabellen gevraagd is):
 
 | tabelidentificatie        | bron                | omschrijving                                                           |
 |---------------------------|---------------------|------------------------------------------------------------------------|
@@ -35,7 +35,7 @@ Voor de BRP-historie API moeten minimaal de volgende tabellen beschikbaar worden
 
 ## BRP-Bewoning
 
-Voor de BRP-Bewoning API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+Voor de BRP-Bewoning API moeten minimaal de volgende tabellen beschikbaar worden gemaakt (bovenop wat voor BRP-Personen-Bevragen aan tabellen gevraagd is):
 | tabelidentificatie      | bron             | omschrijving                                            |
 |-------------------------|------------------|---------------------------------------------------------|
 | Reden_Bewoning_Onbekend | tabelwaarden.csv | Reden dat bewoning en bewoners niet kan worden bepaald. |
