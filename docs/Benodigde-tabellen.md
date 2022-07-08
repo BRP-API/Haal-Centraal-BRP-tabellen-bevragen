@@ -1,21 +1,49 @@
+# Benodigde tabellen voor Haal Centraal API's
+
 Noot: De landelijke tabellen zijn gepubliceerd op https://publicaties.rvig.nl/Landelijke_tabellen/Landelijke_tabellen_32_t_m_61_excl_tabel_35
+
+Mogelijke waarden van LO GBA elementen staan in tabelwaarden.csv
+
+## BRP-Personen-Bevragen
 
 Voor de BRP-Personen-Bevragen moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
 
-| tabel                                 | bron                                                         | veld                                      |
-| ------------------------------------- | ------------------------------------------------------------ | ----------------------------------------- |
-| Aanduiding bij huisnummer             | Mogelijke waarden uit het LO GBA Element 11.50               | Aanduiding bij huisnummer                 |
-| Aanduiding bijzonder Nederlanderschap | Mogelijke waarden uit het LO GBA Element 65.10               | Aanduiding bijzonder Nederlanderschap     |
-| AdellijkeTitelPredicaat               | Landelijke tabel 38                                          |                                           |
-| EuropeesKiesrecht                     | Mogelijke waarden uit het LO GBA Element 31.10               | Europees Kiesrecht                        |
-| FunctieAdres                          | Mogelijke waarden uit het LO GBA Element 10.10               | Functie Adres                             |
-| Gemeenten                             | Landelijke tabel 33                                          |                                           |
-| Geslacht                              | Mogelijke waarden uit het LO GBA 3.14 Element 04.10          | Geslachtsaanduiding                       |
-| Gezagsverhouding                      | Landelijke tabel 61                                          |                                           |
-| Landen                                | Landelijke tabel 34                                          |                                           |
-| Naamgebruik                           | Mogelijke waarden uit het LO GBA Element 61.10               | Aanduiding naamgebruik                    |
-| Nationaliteiten                       | Landelijke tabel 32                                          |                                           |
-| RedenopschortingBijhouding            | Mogelijke waarden uit LO GBA 3.14 Element 67.20              | Omschrijving Reden Opschorting Bijhouding |
-| Reden opname/beëindigen nationaliteit | Landelijke tabel 37                                          |                                           |
-| SoortVerbintenis                      | Mogelijke waarden uit LO GBA 3.14 Element 15.10              | Soort verbintenis                         |
-| Verblijfstitel                        | Landelijke tabbel 56                                         |                                           |
+| tabelidentificatie           | bron                 | omschrijving                                                                                                                                               |
+|------------------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aanduiding_Bij_Huisnummer    | LO GBA element 11.50 | De aanduiding die wordt gebruikt voor adressen die geen straatnaam en huisnummeraanduidingen hebben, maar verwijzen naar een (verblijf)plaats in de buurt. |
+| Adellijke_Titel_Predicaat    | Landelijke tabel 38  | Adellijke titel/predicaat                                                                                                                                  |
+| Europees_Kiesrecht           | LO GBA element 31.10 | Aanduiding van het recht om deel te nemen aan verkiezingen binnen de Europese Unie.                                                                        |
+| Functie_Adres                | LO GBA element 10.10 | Aanduiding van de functie van het adres.                                                                                                                   |
+| Gemeenten                    | Landelijke tabel 33  | Gemeenten                                                                                                                                                  |
+| Geslacht                     | LO GBA element 04.10 | Geeft aan wat het geslacht is van de persoon.                                                                                                              |
+| Gezagsverhouding             | Landelijke tabel 61  | Gezagsverhouding                                                                                                                                           |
+| Landen                       | Landelijke tabel 34  | Landen                                                                                                                                                     |
+| Naamgebruik                  | LO GBA element 61.10 | De manier waarop de geslachtsnaam van persoon en partner van persoon moet worden verwerkt in de manier waarop persoon wil worden aangesproken.             |
+| Nationaliteiten              | Landelijke tabel 32  | Nationaliteiten                                                                                                                                            |
+| Reden_Nationaliteit          | Landelijke tabel 37  | Reden opnemen - beeindigen Nationaliteit                                                                                                                   |
+| Reden_Opschorting_Bijhouding | LO GBA element 67.20 | Reden voor opschorting van de bijhouding.                                                                                                                  |
+| Soort_Verbintenis            | LO GBA element 15.10 | Soort verbintenis tussen de persoon en de partner die bij de burgerlijke stand is ingeschreven.                                                            |
+| Verblijfstitel               | Landelijke tabel 56  | Verblijfstitel                                                                                                                                             |
+
+## BRP-historie
+
+Voor de BRP-historie API moeten minimaal de volgende tabellen beschikbaar worden gemaakt (bovenop wat voor BRP-Personen-Bevragen aan tabellen gevraagd is):
+
+| tabelidentificatie        | bron                | omschrijving                                                           |
+|---------------------------|---------------------|------------------------------------------------------------------------|
+| Reden_Beeindigen_Huwelijk | Landelijke tabel 41 | Reden ontbinding nietigverklaring huwelijk geregistreerd partnerschap. |
+
+## BRP-Bewoning
+
+Voor de BRP-Bewoning API moeten minimaal de volgende tabellen beschikbaar worden gemaakt (bovenop wat voor BRP-Personen-Bevragen aan tabellen gevraagd is):
+| tabelidentificatie      | bron             | omschrijving                                            |
+|-------------------------|------------------|---------------------------------------------------------|
+| Reden_Bewoning_Onbekend | tabelwaarden.csv | Reden dat bewoning en bewoners niet kan worden bepaald. |
+
+## Reisdocumenten-bevragen
+
+Voor de Reisdocumenten-bevragen API moeten minimaal de volgende tabellen beschikbaar worden gemaakt:
+| tabelidentificatie      | bron                | omschrijving                    |
+|-------------------------|---------------------|---------------------------------|
+| Nederlands_Reisdocument | Landelijke tabel 48 | Nederlands Reisdocument         |
+| Geldig_Reisdocument     | tabelwaarden.csv    | Geldigheid van een reisdocument |
