@@ -91,7 +91,7 @@ paths:
       parameters:
         - $ref: '#/components/parameters/tabelidentificatie_path'
         - $ref: '#/components/parameters/omschrijving'
-        - $ref: '#/components/parameters/inclusiefbeeindigd'
+        - $ref: '#/components/parameters/inclusiefBeeindigd'
       responses:
         '200':
           description: "Zoekactie geslaagd"
@@ -194,9 +194,9 @@ components:
       required: false
       schema:
         type: string
-    inclusiefbeeindigd:
+    inclusiefBeeindigd:
       in: query
-      name: inclusiefbeeindigd
+      name: inclusiefBeeindigd
       description: "De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd."
       required: false
       schema:
