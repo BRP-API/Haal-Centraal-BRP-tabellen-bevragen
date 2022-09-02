@@ -6,7 +6,7 @@ servers:
 info:
   title: Landelijke tabellen
   description: "API voor het ontsluiten van landelijke tabellen die op de website van BZK worden gepubliceerd."
-  version: "1.0.0"
+  version: "2.0.0"
   contact:
     url: https://github.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/tree/master/api-specificatie/Landelijke%20tabellen
   license:
@@ -91,7 +91,7 @@ paths:
       parameters:
         - $ref: '#/components/parameters/tabelidentificatie_path'
         - $ref: '#/components/parameters/omschrijving'
-        - $ref: '#/components/parameters/inclusiefbeeindigd'
+        - $ref: '#/components/parameters/inclusiefBeeindigd'
       responses:
         '200':
           description: "Zoekactie geslaagd"
@@ -194,9 +194,9 @@ components:
       required: false
       schema:
         type: string
-    inclusiefbeeindigd:
+    inclusiefBeeindigd:
       in: query
-      name: inclusiefbeeindigd
+      name: inclusiefBeeindigd
       description: "De indicatie waarmee aangegeven wordt of beëindigde waarden moeten worden meegeleverd. Default worden alleen actuele tabelwaarden geretourneerd. Wanneer deze wordt opgenomen met de waarde true, dan worden ook beëindigde tabelwaarden meegeleverd."
       required: false
       schema:
