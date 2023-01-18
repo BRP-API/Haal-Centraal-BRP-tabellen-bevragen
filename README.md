@@ -6,8 +6,8 @@
 API voor het zoeken en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.  
 
 ## Direct uitproberen?
-* Bekijk de specificaties met [Swagger UI](swagger-ui) of [Redoc](./redoc)
-* Lees de [Getting started](getting-started)
+* Bekijk de specificaties met [Swagger UI](https://vng-realisatie.github.io/Haal-Centraal-BRP-tabellen-bevragen/swagger-ui) of [Redoc](https://vng-realisatie.github.io/Haal-Centraal-BRP-tabellen-bevragen//redoc)
+* Lees de [Getting started](https://vng-realisatie.github.io/Haal-Centraal-BRP-tabellen-bevragen/getting-started)
 * Download de [technische specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml)
 
 ## Heb je meer nodig? 
