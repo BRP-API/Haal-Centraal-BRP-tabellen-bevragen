@@ -24,12 +24,12 @@ Zoeken in de BRP tabellen API is case insensitive en ondersteunt het gebruik van
 
 Standaard levert de API bij het zoeken geen beëindigde tabelwaarden, zoals landen die niet meer bestaan. Je kunt ook beëindigde waarden vinden door de parameter inclusiefbeeindigd=true op te nemen in het request.
 
-Je kunt een visuele representatie van de specificatie bekijken met [Swagger UI]({{ site.baseurl }}/swagger-ui) of [Redoc]({{ site.baseurl }}/redoc).
+Je kunt een visuele representatie van de specificatie bekijken met [Swagger UI](swagger-ui) of [Redoc](redoc).
 
-Je kunt de [functionele documentatie](./features) vinden in de [features](./features).
+Je kunt de [functionele documentatie](./features) vinden in de [features](features).
 
 ## Implementeer de API client
-Client code kun je genereren met de "[genereervariant](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}" van de API-specificaties en een code generator. Een overzicht met codegeneratoren kun je vinden op [OpenAPI.Tools](https://openapi.tools/#sdk){:target="_blank" rel="noopener"}.
+Client code kun je genereren met de "[genereervariant](https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}" van de API-specificaties en een code generator. Een overzicht met codegeneratoren kun je vinden op [OpenAPI.Tools](https://openapi.tools/#sdk){:target="_blank" rel="noopener"}.
 
 Deze repo bevat scripts waarmee je met [OpenAPI Generator](https://openapi-generator.tech/){:target="_blank" rel="noopener"} client code kunt genereren in JAVA, .NET (Full Framework & Core) en Python. De makkelijkste manier om de code generatie scripts te gebruiken, is door deze repo te clonen. Na het clonen kun je met `npm install` de benodigde packages installeren en kun je met npm run <script naam> één van de volgende scripts uitvoeren:
 - oas:generate-java-client (voor JAVA client code)
@@ -52,7 +52,7 @@ __Je kan de Haal Centraal probeeromgeving niet gebruiken vanuit de browser, dus 
 
 ### Importeer de specificaties in Postman
 
-De werking van de API is het makkelijkst te testen met behulp van [Postman](https://www.getpostman.com/){:target="_blank" rel="noopener"}. We hebben al een [Postman collection](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/test/BRP-tabellen-bevragen-postman-collection.json){:target="_blank" rel="noopener"} voor je klaargezet. Deze kun je importeren in Postman. 
+De werking van de API is het makkelijkst te testen met behulp van [Postman](https://www.getpostman.com/){:target="_blank" rel="noopener"}. We hebben al een [Postman collection](https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/blob/master/test/BRP-tabellen-bevragen-postman-collection.json){:target="_blank" rel="noopener"} voor je klaargezet. Deze kun je importeren in Postman. 
 
 ### Configureer de url en api key
 

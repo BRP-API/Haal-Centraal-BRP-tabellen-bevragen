@@ -4,23 +4,23 @@ title: Haal Centraal BRP tabellen bevragen
 ---
 # Haal Centraal BRP tabellen bevragen
 
-![lint oas](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/lint-oas/badge.svg)
-![generate postman collection](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/workflows/generate-postman-collection/badge.svg)
+![lint oas](https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/workflows/lint-oas/badge.svg)
+![generate postman collection](https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/workflows/generate-postman-collection/badge.svg)
 
 API voor het zoeken en raadplegen van BRP landelijke tabellen. De API wordt nog niet door RvIG aangeboden. Om de migratie naar API's te versnellen besluiten sommige gemeenten de API zelf aan te bieden.  
 
 ## Direct uitproberen?
-* Bekijk de specificaties met [Swagger UI](./swagger-ui) of [Redoc](./redoc)
-* Lees de [Getting started](./getting-started)
-* Download de [technische specificaties](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}
+* Bekijk de specificaties met [Swagger UI](swagger-ui) of [Redoc](redoc)
+* Lees de [Getting started](getting-started)
+* Download de [technische specificaties](https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/blob/master/specificatie/genereervariant/openapi.yaml){:target="_blank" rel="noopener"}
 
 ## Heb je meer nodig? 
 Gebruik de BRP tabellen API in combinatie met (een van de) andere BRP API’s:
 
-* [Actuele BRP-gegevens bevragen](https://vng-realisatie.github.io/Haal-Centraal-BRP-bevragen){:target="_blank" rel="noopener"}
-* [Historische BRP-gegevens bevragen](https://vng-realisatie.github.io/Haal-Centraal-BRP-historie-bevragen){:target="_blank" rel="noopener"}
-* [Reisdocumenten bevragen](https://vng-realisatie.github.io/Haal-Centraal-Reisdocumenten-bevragen){:target="_blank" rel="noopener"}
-* [Bewoning en medebewoners bevragen](https://vng-realisatie.github.io/Haal-Centraal-BRP-bewoning){:target="_blank" rel="noopener"}
+* [Actuele BRP-gegevens bevragen](https://BRP-API.github.io/Haal-Centraal-BRP-bevragen){:target="_blank" rel="noopener"}
+* [Historische BRP-gegevens bevragen](https://BRP-API.github.io/Haal-Centraal-BRP-historie-bevragen){:target="_blank" rel="noopener"}
+* [Reisdocumenten bevragen](https://vBRP-API.github.io/Haal-Centraal-Reisdocumenten-bevragen){:target="_blank" rel="noopener"}
+* [Bewoning en medebewoners bevragen](https://BRP-API.github.io/Haal-Centraal-BRP-bewoning){:target="_blank" rel="noopener"}
 
 ## Bronnen
 
@@ -39,4 +39,4 @@ Gebruik de BRP tabellen API in combinatie met (een van de) andere BRP API’s:
 
 ## Licentie
 Copyright &copy; VNG Realisatie 2020
-Licensed under the [EUPL](https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/blob/master/LICENCE.md)
+Licensed under the [EUPL](https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/blob/master/LICENCE.md)
