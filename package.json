@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen.git"
+    "url": "git+https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen/issues"
+    "url": "https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen/issues"
   },
-  "homepage": "https://github.com/VNG-Realisatie/Haal-Centraal-BRP-tabellen-bevragen#readme",
+  "homepage": "https://github.com/BRP-API/Haal-Centraal-BRP-tabellen-bevragen#readme",
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.1.25",
     "@stoplight/spectral": "^5.8.1",
