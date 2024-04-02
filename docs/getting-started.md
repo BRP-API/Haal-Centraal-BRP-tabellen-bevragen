@@ -44,7 +44,7 @@ Note. De prerequisite van OpenAPI Generator is JAVA. Je moet een JAVA runtime in
 ## Probeer en test de API
 Wil je de 'BRP tabellen bevragen' Web API proberen en testen? Kijk op: `https://www.haalcentraal.nl/haalcentraal/api/landelijke_tabellen`
 
-Om de web api te gebruiken heb je een apikey nodig. Deze voeg je aan een request toe als header "X-API-KEY". Een API-key vraag je aan bij de product owner [cathy.dingemanse@denhaag.nl](mailto:cathy.dingemanse@denhaag.nl).
+Om de web api te gebruiken heb je een apikey nodig. Deze voeg je aan een request toe als header "X-API-KEY". Een API-key vraag je aan bij de product owner [cathy.dingemanse@rvig.nl](cathy.dingemanse@rvig.nl).
 
 __De tabellen in de Haal Centraal probeeromgeving worden niet bijgehouden. Dit zijn dus niet de actuele tabellen.__
 
